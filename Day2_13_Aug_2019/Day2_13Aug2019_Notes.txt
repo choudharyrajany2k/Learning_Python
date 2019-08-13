@@ -2,7 +2,7 @@ Nice links for  For Python -
 IN the end there is a link fo the book
 https://www.afternerd.com/blog/python-lambdas/
 
-while has a else also
+while and for has a else also
 
 
 *****************************
@@ -14,3 +14,6 @@ Types of Error in python
 
 
 repr is used for "raw exception"
+
+(12,) is a tuple
+(12) is an int

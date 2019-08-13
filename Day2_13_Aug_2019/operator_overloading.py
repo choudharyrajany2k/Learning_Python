@@ -24,8 +24,25 @@ print(myList)
 del myList[0:4]
 print(myList)
 
-
-myanotherlist = [(123,1234),None]
-print(f"{myanotherlist.sort()}")
-print(f"{sorted(myanotherlist)}")
+#Python 2.x supports sort but not python 3.x
+# myanotherlist = [(123,1234),None]  
+# print(f"{myanotherlist.sort()}")
+# print(f"{sorted(myanotherlist)}")
 print(f"type(None) {type(None)}")
+
+
+
+
+# A generator function that yields 1 for first time, 
+# 2 second time and 3 third time 
+def simpleGeneratorFun(): 
+	yield 1			
+	yield 2			
+	yield 3			
+
+print(f"type(simpleGeneratorFun) {type(simpleGeneratorFun)}")
+# Driver code to check above generator function 
+for value in simpleGeneratorFun(): 
+    print(value) 
+
+#generator is not a class
