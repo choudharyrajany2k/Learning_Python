@@ -1,0 +1,16 @@
+Nice links for  For Python - 
+IN the end there is a link fo the book
+https://www.afternerd.com/blog/python-lambdas/
+
+while has a else also
+
+
+*****************************
+
+Types of Error in python
+     - Logical
+     - Syntax
+     - Exceptions
+
+
+repr is used for "raw exception"

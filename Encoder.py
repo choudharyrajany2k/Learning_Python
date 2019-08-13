@@ -1,6 +1,7 @@
 #!/usr/bin/python
 """
     Purpose: To Encode a string with incement by 3
+            ceaser cipher
 """
 def encodeStringNew():
     max_index = ord('z')
