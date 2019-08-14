@@ -101,6 +101,21 @@ how many seconds passed
 
 module timestamp
 
+===================
+https://indian-cities-api-nocbegfhqg.now.sh/cities
+
+==============================
+module name request_oath
+
+======================
+tweepy for wrking on twitter
+========================
+
+pymotto
+realpython
+pymotw.com
+python tutor
+
 
 
 
