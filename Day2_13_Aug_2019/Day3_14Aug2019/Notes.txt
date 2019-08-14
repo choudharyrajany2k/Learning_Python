@@ -1,0 +1,107 @@
+For Generators 
+
+https://www.freecodecamp.org/news/how-and-why-you-should-use-python-generators-f6fb56650888/
+
+
+we can create pdf from notebook.
+software need to be installed - pandoc 
+
+
+for mutable objects - > pass by reference
+    - need to have a global declaration in case we need to acess a global value
+for imutable objects - > pass by value
+
+
+
+Built In Functions
+
+map
+reduce - in py2 it is inbuilt , in py3 it is part of functools module
+filter
+
+
+
+=====================
+PythonTutor.com
+
+For visualizing memory frames in UI 
+
+===================
+
+sys.argv is used for command line arguments
+
+
+To pass username and password e.t.c during runtime
+argumentparse module for passing the argumenst
+
+optparse - older version
+
+=========================================
+
+OSModule -  gave python plateform agnostics
+
+
+===========================================
+
+List all the files of the size
+
+
+os.stat() - gives the stat for the a files
+st_size of size of the file
+
+=============================
+Subprocess module for getting the output for each system commands
+=============================
+
+python -m lib2to3 -w subprocess_ex.py
+
+getpass() for avoiding piggybacking for entering password
+
+===================================
+
+consolecolor module for changing the color of the console
+
+
+==========================context manager in python
+ with <expression>:
+ =================================
+csv module
+ dictwriter
+ ==============================
+ pandas for data frames
+===============================
+xlsxwriter module for excel
+
+
+For instaling a module
+pip install -U xlswriter --user
+
+===================================
+
+import urllib.request
+ for reading a data from a web servicew
+
+ alternative
+
+using requests
+
+
+ai.open-notify.org/iss
+ai.open-notify.org/astros
+
+=========
+
+
+myDict['key'] throws an error
+myDict.get() does not thros an error
+
+===================
+Jan1, 1970
+how many seconds passed
+
+module timestamp
+
+
+
+
+
