@@ -1,0 +1,153 @@
+Score: 80%
+12/15 points
+Socgen | BLR | Python | Post Test | 14th August 2019 | Uday Prkash
+Page 1/1
+Question Title
+3. what is the result of the below statement:
+sum(i*i for i in range(10))
+
+TypeError: sum expected at most 2 arguments, got 10
+ 
+285
+ 
+None of Above
+0/1 point
+Question Title
+4. What does the Python Enhancement Proposal PEP 8 deals with
+
+bug fixing
+ 
+coding style guide
+ 
+named tuple
+1/1 point
+Question Title
+5. What is the result of the statement: num1 = pow(8, 2, 10)
+
+64
+ 
+74
+ 
+4
+1/1 point
+Question Title
+6. What is the result of the following:
+mylist = ['a', 'b', 'c', 'd', 'e'] print(list[56:999])
+
+[]
+ 
+Error
+ 
+['a', 'b', 'c', 'd', 'e']
+1/1 point
+Question Title
+7. What is the result of the statement:
+a, *b, c = 1, 2, 3, 4, 5 print(b)
+
+2
+ 
+Error
+ 
+(2, 3, 4)
+1/1 point
+Question Title
+8. What is the result of the statement:
+from functools import reduce print(reduce(lambda x, y: x*y, range(1,9)))
+
+40320
+ 
+TypeError: <lambda>() missing 1 required positional argument: 'y'
+ 
+None of Above
+1/1 point
+Question Title
+9. What is the alogorithm used for generating random numbers in python:
+
+Mersenne Twister
+ 
+random algorithm
+ 
+Fisher-Yates algorithm
+1/1 point
+Question Title
+10. What is the result of the following:
+print('Yes' if True else False)
+
+No
+ 
+Yes
+ 
+Error
+1/1 point
+Question Title
+11. What is the result of the following:
+print(''.join(chr(ord(i)+1) for i in 'python'))
+
+'python'
+ 
+'s|wkrq'
+ 
+'qzuipo'
+1/1 point
+Question Title
+12. What is the result of the following:
+print(1 + '1')
+
+2
+ 
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+ 
+'11'
+1/1 point
+Question Title
+13. What is the result of the following:
+print(type(range))
+
+range
+ 
+list
+ 
+Error
+1/1 point
+Question Title
+14. What is the result of the following:
+sum(map(int, [i for i in '1231jh123jh123' if i.isdigit()]))
+
+19
+ 
+Error
+ 
+<map at ...>
+1/1 point
+Question Title
+15. What is the result of the following:
+L1 = [1, 2]; L2 = L1[::]; print(L1 is L2)
+
+True
+ 
+False
+ 
+Error
+0/1 point
+Question Title
+16. What is the result of the following:
+max(1, 2, 2, 3, 6.6, 6)
+
+6
+ 
+can't operate between int and float
+ 
+6.6
+1/1 point
+Question Title
+17. What is the result of the following
+print('1', '2', '3', sep='\t')
+
+1 2 3
+ 
+1\t2\t3
+ 
+1 2 3
+0/1 point
+Done
+ Surveymonkey Logo  All set! Now create your own interactive quiz. Get started
