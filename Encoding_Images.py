@@ -38,9 +38,7 @@ def encode_images():
             with open(os.path.join(root, _image), 'rb') as image:
                 image_read = image.read()
                 image_64_encode = base64.encodestring(image_read)
-                # folder_path_files_to_save = get_base_64_folder()
                 _text_file_name = str(_image)+'.txt'
-                # os.chdir(folder_path_files_to_save)
                 with open(_text_file_name, 'wb') as fh:
                     fh.write(image_64_encode)
                     fh.close()
@@ -57,7 +55,6 @@ def decode_images():
             with open(_base_64_text_file,'rb') as _text_files:
                 _base_64text = _text_files.read()
                 image_64_decode = base64.decodestring(_base_64text)
-                # os.chdir(_cwd)
                 os.chdir(_images_folder)
                 _filename_without_ext = os.path.splitext(_base_64_text_file)[0]
                 with open(_filename_without_ext, 'wb') as image_result:
