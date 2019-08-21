@@ -133,7 +133,62 @@ df.iloc[0,:]
 #int(df['height']) * int(df['width'])
 # df['height'].sort_values().head()
 
-pd.to_numeric(df['width'],errors='coerce').sort_values().tail()
+pd.to_numeric(df['width'],errors='coerce').sort_values(ascending=False).tail()
+pd.to_numeric(df['width'],errors='coerce').sort_values(ascending=False).head()
 
+#%% Group Operations
+# following returns an object pandas.core.groupby.generic.DataFrameGroupBy
+# This is iterable
+# df.groupby('artist') 
+# grouped_data = []
+# for row in df.groupby('artist'):
+#     grouped_data.append(row)
+    # print(type(row))
+    # break
+#creating a small dataframe
+small_df = df.iloc[49980:50019,:].copy()
+small_df
+grouped = small_df.groupby('artist')
+type(grouped)
+for name,group_df in grouped:
+    print(name)
+    print(group_df)
+    break
 
-#%%
+#%% Grouping operations Aggregation,filtering and transformation
+for name,grouped_df in grouped:
+    print(name ,"---> ",grouped_df['acquisitionYear'].min())
+    # grouped_df['acquisitionYear'].min() 
+#%%Demo value types
+
+for name,grouped_df in grouped:
+    print(name)
+    print(type(grouped_df['medium'])) #pandas.core.series.Series
+    values_count_group = grouped_df['medium'].value_counts()
+    print(type(values_count_group))
+    print((grouped_df['medium']).value_counts().index[0])
+    break
+
+#%% Demo fillna of series
+
+for name, grouped_df in grouped:
+    print(name)
+    medium_series = grouped_df['medium']
+    medium_series[4708] = np.nan
+    print(medium_series)
+    most_frequent = medium_series.value_counts().index[0]
+
+    print(type(medium_series.value_counts().index[0]))
+    print(f'printing most frequest- > {most_frequent}')
+    transformed_Series = medium_series.fillna(most_frequent)
+    print(transformed_Series)
+    break
+
+#%% Builtin functions of Pandas for group operations
+type(small_df.groupby('artist')['medium']) #pandas.core.groupby.generic.SeriesGroupBy
+series_group_by = small_df.groupby('artist')['medium']
+for name,_series,name_series,_dtype in series_group_by:
+    print(f'name -> {name}')
+    print(f'_series -> {_series}')
+    break
+
